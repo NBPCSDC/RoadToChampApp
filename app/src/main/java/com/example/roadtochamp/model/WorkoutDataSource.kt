@@ -2,10 +2,6 @@ package com.example.roadtochamp.model
 
 object WorkoutDataSource {
 
-    fun getWorkoutFromInternet() : List<Workout>{
-        return listOf()
-    }
-
     fun getWorkoutList() : List<Workout>{
         return listOf(
             Workout("upper1",arrayOf(
