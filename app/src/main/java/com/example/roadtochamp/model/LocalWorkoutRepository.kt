@@ -1,8 +1,8 @@
 package com.example.roadtochamp.model
 
-object WorkoutDataSource {
+object LocalWorkoutRepository : WorkoutRepository{
 
-    fun getWorkoutList() : List<Workout>{
+    override fun getWorkouts() : List<Workout>{
         return listOf(
             Workout("upper1",arrayOf(
                 Exo("Développé Incliné",150),
@@ -27,6 +27,7 @@ object WorkoutDataSource {
                 Exo("Oiseau Assis", 60),
                 Exo("Upright Row", 60)
             )
-            ))
+            )
+        )
     }
 }

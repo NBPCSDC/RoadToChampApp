@@ -8,15 +8,13 @@ internal class WorkoutRepositoryTest {
 
     @Test
     fun getWorkoutsNotEmpty() {
-        val dataSource = WorkoutDataSource
-        val repo = WorkoutRepository()
+        val repo = LocalWorkoutRepository
         assertTrue(repo.getWorkouts().isNotEmpty())
     }
 
     @Test
     fun getWorkouts() {
-        val dataSource = WorkoutDataSource
-        val repo = WorkoutRepository()
+        val repo = LocalWorkoutRepository
         println(repo.getWorkouts())
     }
 }
