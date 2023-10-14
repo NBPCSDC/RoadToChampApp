@@ -12,8 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RoadToChamp"
         tools:targetApi="31">
+
         <activity
-            android:name=".view.MainActivity"
+            android:name=".NutritionHomeActivity"
+            android:exported="false">
+        </activity>
+
+        <activity
+            android:name=".view.HomePageActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

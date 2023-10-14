@@ -1,4 +1,4 @@
-package com.example.roadtochamp.model
+package com.example.roadtochamp.model.workout
 
 class Workout(private val name : String, private val Exos : Array<Exo>) {
     override fun toString(): String {

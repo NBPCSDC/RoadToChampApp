@@ -2,5 +2,8 @@
     <string name="app_name">RoadToChamp</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="button">Button</string>
+    <string name="buttonNutrition">NUTRITION</string>
+    <string name="entrainement">ENTRAINEMENT</string>
+    <string name="nutrition">NUTRITION</string>
+    <string name="food_track">Food Track</string>
 </resources>
