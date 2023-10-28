@@ -1,43 +1,38 @@
 package com.example.roadtochamp.view
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import com.example.roadtochamp.NutritionHomeActivity
 import com.example.roadtochamp.R
+import com.example.roadtochamp.dataManager.DataSourceExternalStorage
 import com.example.roadtochamp.injection.ViewModelFactory
+import com.example.roadtochamp.repository.AppRepository
+import com.example.roadtochamp.view.viewModel.AlimentViewModel
+import com.example.roadtochamp.view.viewModel.DayConsoViewModel
+import com.example.roadtochamp.view.viewModel.WorkoutViewModel
 
 class HomePageActivity : AppCompatActivity() {
 
-    private lateinit var button : Button
-    private lateinit var buttonVal : Button
-    private lateinit var buttonload : Button
-    private lateinit var csvText : TextView
-    private lateinit var csvFileText : TextView
+    private lateinit var nutritionButton : Button
+    private lateinit var workoutButton : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.homepage)
 
-        buttonload = findViewById(R.id.buttonLoad)
-        button = findViewById(R.id.button)
-        buttonVal = findViewById(R.id.buttonVal)
-        csvText = findViewById(R.id.csvData)
-        csvFileText = findViewById(R.id.fileName)
+        nutritionButton = findViewById(R.id.nutritionButton)
 
-        val viewModelFactory = ViewModelFactory(this)
 
-        val workoutViewModel = ViewModelProvider(this,viewModelFactory)[WorkoutViewModel::class.java]
-        val alimentViewModel = ViewModelProvider(this,viewModelFactory)[AlimentViewModel::class.java]
-
-        buttonVal.setOnClickListener{
-            workoutViewModel.currentWorkout
+        nutritionButton.setOnClickListener {
+            val intent = Intent(this, NutritionHomeActivity::class.java).apply {
+            }
+            startActivity(intent)
         }
-
-        buttonload.setOnClickListener {
-        }
-
     }
 }

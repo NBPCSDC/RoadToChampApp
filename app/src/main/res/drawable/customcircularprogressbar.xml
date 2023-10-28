@@ -3,25 +3,25 @@
     <item>
         <shape
             android:shape="ring"
-            android:thicknessRatio="24"
-            android:useLevel="false">
-            <solid android:color="#FF00FF"/>
+            android:thicknessRatio="20"
+            android:useLevel="false"
+            android:angle="90">>
+
+            <solid android:color="#cccccc" />
         </shape>
     </item>
 
     <item>
+        <rotate
+            android:fromDegrees="270"
+            android:toDegrees="270">
         <shape
             android:shape="ring"
-            android:thicknessRatio="24"
-            android:useLevel="true">
-            <solid android:color="#000000"/>
+            android:thicknessRatio="20"
+            android:useLevel="true"
+            android:angle="90">>
+            <solid android:color="?attr/progressBarColor"/>
         </shape>
+        </rotate>
     </item>
-    <!--<item android:gravity="center">
-        <shape android:shape="oval">
-            <size android:width="32dp" android:height="32dp"/>
-            <solid android:color="#000000"/>
-        </shape>
-    </item>-->
-
 </layer-list>

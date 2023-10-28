@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="RedColor" parent="Theme.AppCompat">
+        <item name="progressBarColor">#F00</item>
+    </style>
+    <style name="GreenColor">
+        <item name="progressBarColor">#0F0</item>
+    </style>
+</resources>
