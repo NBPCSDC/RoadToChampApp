@@ -9,32 +9,24 @@ import com.example.roadtochamp.model.workout.Workout
 
 class AppRepository(private val externalStorageDataSource: DataSourceExternalStorage) : IRepository {
 
-    override fun getWorkouts(): MutableLiveData<List<Workout>> {
-        val workoutsLiveData = MutableLiveData<List<Workout>>()
+    override fun getWorkouts(): List<Workout> {
         val workouts = externalStorageDataSource.getWorkouts()
-        workoutsLiveData.value = workouts
-        return workoutsLiveData
+        return workouts
     }
 
-    override fun getAliments(): MutableLiveData<List<Aliment>> {
-        val alimentsLiveData = MutableLiveData<List<Aliment>>()
+    override fun getAliments(): List<Aliment> {
         val aliments = externalStorageDataSource.getAliments()
-        alimentsLiveData.value = aliments
-        return alimentsLiveData
+        return aliments
     }
 
-    override fun getDayConso(): MutableLiveData<DayConso> {
-        val dayConsoLiveData = MutableLiveData<DayConso>()
+    override fun getDayConso(): DayConso {
         val dayConso = externalStorageDataSource.getDayConso()
-        dayConsoLiveData.value = dayConso
-        return dayConsoLiveData
+        return dayConso
     }
 
-    override fun getDayConsoHistory(): MutableLiveData<List<DayConso>> {
-        val dayConsoHistoryLiveData = MutableLiveData<List<DayConso>>()
+    override fun getDayConsoHistory(): List<DayConso> {
         val dayConsoHistory = externalStorageDataSource.getDayConsoHistory()
-        dayConsoHistoryLiveData.value = dayConsoHistory
-        return dayConsoHistoryLiveData
+        return dayConsoHistory
     }
 
     override fun saveWorkouts(workouts: List<Workout>) {

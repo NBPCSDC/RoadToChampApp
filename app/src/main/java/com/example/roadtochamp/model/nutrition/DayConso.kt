@@ -12,10 +12,10 @@ class DayConso(
     private var prot: Int = 0,
     private var glu: Int = 0,
     private var lip: Int = 0,
-    private var calGoal: Int = 1800,
-    private var protGoal: Int = 0,
-    private var gluGoal: Int = 0,
-    private var lipGoal: Int = 0
+    private var calGoal: Int = 2125,
+    private var protGoal: Int = 102,
+    private var gluGoal: Int = 282,
+    private var lipGoal: Int = 65
 ) {
 
     fun getCal(): Int {

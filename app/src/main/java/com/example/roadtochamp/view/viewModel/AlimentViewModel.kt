@@ -7,6 +7,6 @@ import com.example.roadtochamp.repository.IRepository
 
 class AlimentViewModel(repository : IRepository) : ViewModel() {
 
-    private var aliments : LiveData<List<Aliment>> = repository.getAliments()
+    private var aliments : List<Aliment> = repository.getAliments()
 
 }

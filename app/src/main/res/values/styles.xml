@@ -1,9 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="RedColor" parent="Theme.AppCompat">
-        <item name="progressBarColor">#F00</item>
+
+
+    <!--Calories ProgressBar styles-->
+
+    <style name="ProgressBarCalStyle">
+        <item name="progressColor">@color/purple_500</item>
+        <item name="progressBarThickness">20.0</item>
+        <item name="progressBackgroundColor">@color/grey</item>
     </style>
-    <style name="GreenColor">
-        <item name="progressBarColor">#0F0</item>
+
+    <style name="ExceededProgressBarCalStyle">
+        <item name="progressColor">@color/pourpre</item>
+        <item name="progressBarThickness">20.0</item>
+        <item name="progressBackgroundColor">@color/purple_500</item>
+    </style>
+
+    <style name="completedProgressBarCalStyle">
+        <item name="progressColor">@color/purple_700</item>
+        <item name="progressBarThickness">20.0</item>
+        <item name="progressBackgroundColor">@color/purple_500</item>
+    </style>
+
+
+    <!--Macro ProgressBar styles-->
+    <style name="ProgressBarProtStyle">
+        <item name="progressColor">@color/protColor</item>
+        <item name="progressBarThickness">10.0</item>
+    </style>
+
+    <style name="ProgressBarGluStyle">
+        <item name="progressColor">@color/gluColor</item>
+        <item name="progressBarThickness">10.0</item>
+    </style>
+
+    <style name="ProgressBarLipStyle">
+        <item name="progressColor">@color/lipColor</item>
+        <item name="progressBarThickness">10.0</item>
     </style>
 </resources>

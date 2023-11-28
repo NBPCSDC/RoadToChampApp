@@ -10,5 +10,6 @@
     <color name="lipColor">#582900</color>
     <color name="protColor">#1414b8</color>
     <color name="gluColor">#d00000</color>
-    <color name="completeColor">#00FF00</color>
+    <color name="grey">#cccccc</color>
+    <color name="pourpre">#BC0000</color>
 </resources>

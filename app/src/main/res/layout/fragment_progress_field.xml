@@ -31,8 +31,7 @@
             android:layout_height="300dp"
             android:indeterminateOnly="false"
             android:progressDrawable="@drawable/customcircularprogressbar"
-            android:progress="60"
-            android:theme="@style/GreenColor"
+            android:theme="@style/ProgressBarCalStyle"
             />
 
             <TextView
@@ -40,10 +39,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="@color/design_default_color_primary_dark"
                 android:text=""/>
 
         </FrameLayout>
+
         <TextView
             android:id="@+id/textView"
             android:layout_width="80dp"
@@ -78,7 +77,8 @@
                         android:layout_height="30dp"
                         android:layout_gravity="center"
                         android:indeterminateOnly="false"
-                        android:progressDrawable="@drawable/protwideprogressbar" />
+                        android:progressDrawable="@drawable/customcircularprogressbar"
+                        android:theme="@style/ProgressBarProtStyle"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -94,7 +94,7 @@
                     android:id="@+id/protText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="80" />
+                    android:text="0" />
             </LinearLayout>
 
             <LinearLayout
@@ -116,7 +116,8 @@
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:indeterminateOnly="false"
-                        android:progressDrawable="@drawable/gluwideprogressbar" />
+                        android:progressDrawable="@drawable/customcircularprogressbar"
+                        android:theme="@style/ProgressBarGluStyle"/>
 
                     <TextView
                         android:id="@+id/G"
@@ -131,7 +132,7 @@
                     android:id="@+id/gluText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="80" />
+                    android:text="0" />
             </LinearLayout>
 
             <LinearLayout
@@ -143,7 +144,7 @@
 
                 <FrameLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="0dp"
                     android:layout_gravity="center"
                     android:layout_weight="1">
 
@@ -154,7 +155,9 @@
                         android:layout_height="30dp"
                         android:layout_gravity="center"
                         android:indeterminateOnly="false"
-                        android:progressDrawable="@drawable/libwideprogressbar" />
+                        android:progressDrawable="@drawable/customcircularprogressbar"
+                        android:theme="@style/ProgressBarLipStyle"
+                        />
 
                     <TextView
                         android:id="@+id/L"
@@ -166,10 +169,10 @@
                 </FrameLayout>
 
                 <TextView
-                    android:id="@+id/LipText"
+                    android:id="@+id/lipText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="80" />
+                    android:text="0" />
             </LinearLayout>
 
         </LinearLayout>

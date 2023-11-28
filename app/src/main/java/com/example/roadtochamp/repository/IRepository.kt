@@ -7,12 +7,12 @@ import com.example.roadtochamp.model.nutrition.DayConso
 import com.example.roadtochamp.model.workout.Workout
 
 interface IRepository{
-    fun getWorkouts(): MutableLiveData<List<Workout>>
+    fun getWorkouts(): List<Workout>
 
-    fun getAliments(): MutableLiveData<List<Aliment>>
+    fun getAliments(): List<Aliment>
 
-    fun getDayConso(): MutableLiveData<DayConso>
-    fun getDayConsoHistory() : MutableLiveData<List<DayConso>>
+    fun getDayConso(): DayConso
+    fun getDayConsoHistory() : List<DayConso>
 
     fun saveWorkouts(workouts : List<Workout>)
 

@@ -3,18 +3,8 @@ package com.example.roadtochamp.view
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
-import com.example.roadtochamp.NutritionHomeActivity
 import com.example.roadtochamp.R
-import com.example.roadtochamp.dataManager.DataSourceExternalStorage
-import com.example.roadtochamp.injection.ViewModelFactory
-import com.example.roadtochamp.repository.AppRepository
-import com.example.roadtochamp.view.viewModel.AlimentViewModel
-import com.example.roadtochamp.view.viewModel.DayConsoViewModel
-import com.example.roadtochamp.view.viewModel.WorkoutViewModel
 
 class HomePageActivity : AppCompatActivity() {
 

@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <attr name="progressBarColor" format="color" />
+    <attr name="progressBackgroundColor" format="color" />
+    <attr name="progressColor" format="color" />
+    <attr name="progressBarThickness" format="float" />
 </resources>
